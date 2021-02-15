@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ItGid.info - создаем многоязычный сайт</title>
+    <title>ItGid.info - TinyMCE</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
@@ -15,46 +16,22 @@
             <h1 class="site-title">
                 ItGid.info
             </h1>
-            <select class="change-lang">
-                <option value="ua">UA</option>
-                <option value="ru" selected>RU</option>
-                <option value="en">EN</option>
-            </select>
         </div>
     </header>
     <div class="container">
-        <h1>ItGid.info - <span class="lng-unit">создаем многоязычный сайт</span></h1>
-        <h2 class="lng-product-title">ABC PCI-Ex GeGe GTX 1650 Phoenix</h2>
-        <section class="grid-1">
-            <div class="left-panel">
-                <img src="./images/video.jpg" alt="">
-                <img src="./images/video2.jpg" alt="">
-                <img src="./images/video3.jpg" alt="">
-                <img src="./images/video4.jpg" alt="">
-                <img src="./images/video5.jpg" alt="">
-            </div>
-            <div class="right-panel">
-                <img src="./images/video.jpg" alt="GG 1650">
-            </div>
+        <h1>ItGid.info - <span class="lng-unit">добавляем WYSIWYG</span></h1>
+        <h2 class="lng-product-title">TinyMCE</h2>
+        <section>
+            <form method="post">
+                <textarea id="mytextarea" name="mytextarea">
+                  Hello, World!
+                </textarea>
+            </form>
+        </section>
+        <section>
+            <button class="get-editor-data">Get data</button>
+        </section>
 
-        </section>
-        <section>
-            <dl>
-                <dt class="lng-chip">Графический чип</dt>
-                <dd class="lng-chip-value">GeForce GTX 1650</dd>
-                <dt class="lng-memory">Объем памяти</dt>
-                <dd class="lng-memory-value">4Гб</dd>
-                <dt class="lng-memory-type">Тип памяти</dt>
-                <dd class="lng-memory-type-value">GDDR6</dd>
-                <dt class="lng-cool">Тип системы охлаждения</dt>
-                <dd class="lng-cool-value">Активная</dd>
-            </dl>
-        </section>
-        <section>
-            <div>
-                <a href="#" class="lng-more">Детально о товаре</a>
-            </div>
-        </section>
 
 
         <div class="courses">
@@ -66,7 +43,15 @@
             </ul>
         </div>
     </div>
-    <script src="lang.js"></script>
+    <script src="https://cdn.tiny.cloud/1/t3349wm8jxfh2mrqyd2mfnrm608ttnyliyx5m6kuyf8kl9b1/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#mytextarea',
+            toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolory | outdent indent',
+            plugins: 'code'
+        });
+    </script>
     <script src="app.js"></script>
 </body>
 

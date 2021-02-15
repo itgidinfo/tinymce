@@ -1,11 +1,11 @@
 # ITGID.info
-## Делаем мультиязычный сайт на JavaScript
+## Подключаем TinyMCE на сайт
 ### https://itgid.info
 
-Мульти lang сайт на JavaScript
+Подключаем TinyMCE на сайт
 ### Посмотреть видеоурок на Youtube
-https://youtu.be/MKx31x5u_SQ
-[![Посмотреть видео](https://github.com/itgidinfo/multilang/blob/master/images/cover.png?raw=true)](https://youtu.be/MKx31x5u_SQ)
+https://youtu.be/DmpTZ_zI-s0
+[![Посмотреть видео](https://github.com/itgidinfo/tinymce/blob/master/images/cover.png?raw=true)](https://youtu.be/DmpTZ_zI-s0)
 
 ### Курсы ItGid.info
 
